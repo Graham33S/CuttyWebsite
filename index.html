@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>tayview.net holding page</title>
+
+  <meta
+    name="description"
+    content="A short description of this website."
+  >
+
+  <style>
+    /*
+      Basic page reset
+    */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "EB Garamond", serif;
+      
+
+      color: white;
+      background-color: #222;
+    }
+
+    /*
+      Full-screen background image
+    */
+    .page {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 100vh;
+      min-height: 100svh;
+
+      padding: 30px;
+
+      background-image: url("background2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /*
+      Darkens the image slightly so that the text remains readable.
+      Increase 0.45 to make the image darker.
+      Reduce it to make the image brighter.
+    */
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    /*
+      Text panel
+    */
+    .content {
+      position: relative;
+      z-index: 1;
+
+      width: min(760px, 100%);
+      padding: 36px;
+
+      text-align: center;
+
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 14px;
+
+      /*
+        The browser will simply ignore this on older systems.
+      */
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      font-weight: 100;
+      font-style: italic;
+    }
+
+    p {
+      margin: 0 auto;
+
+      max-width: 620px;
+
+      font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+      line-height: 1.6;
+    }
+
+    /*
+      Optional link or button
+    */
+    .button {
+      display: inline-block;
+
+      margin-top: 28px;
+      padding: 12px 22px;
+
+      color: #111;
+      background: white;
+
+      border-radius: 999px;
+
+      font-weight: 650;
+      text-decoration: none;
+
+      transition:
+        transform 0.15s ease,
+        background-color 0.15s ease;
+    }
+
+    .button:hover {
+      background: #eeeeee;
+      transform: translateY(-1px);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 4px;
+    }
+
+    /*
+      Slightly smaller panel on phones
+    */
+    @media (max-width: 600px) {
+      .page {
+        padding: 18px;
+      }
+
+      .content {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="content">
+      <h1>www.tayview.net</h1>
+
+      <p>
+      
+      </p>
+
+      <!--
+        This button is optional.
+
+        Change the email address, change the wording, or delete
+        the entire <a> element if you do not want a button.
+      -->
+     <!--
+      <a class="button" href="mailto:you@example.com">
+        Contact us
+     </a>
+      -->
+    </section>
+  </main>
+</body>
+</html>
